@@ -33,5 +33,7 @@ read superuser
 echo "Creating user $username with groups $username and wheel"
 useradd -mU $superuser
 usermod -G wheel $superuser 
+echo "CHANGING $superuser PASSWORD"
+passwd $superuser
 echo "now manually edit sudoers : visudo /etc/sudoers"
-echo "nice! good to go"
+echo "done? You good to go!"
