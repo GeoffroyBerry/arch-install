@@ -10,7 +10,7 @@ sed -iE "s/^#$loca/$loca/" /etc/locale.gen
 echo LANG="$loca.UTF-8" > ./testfile
 
 echo "Changing keymap to fr (azerty)"
-echo KEYMAP=fr > /etc/vconsole.conf
+echo KEYMAP=fr-latin1 > /etc/vconsole.conf
 
 echo "HOSTNAME OF THE NEW MACHINE:"
 read HOSTNAME

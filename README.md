@@ -7,7 +7,7 @@ Pour plus de détails suivez plutôt le [Wiki Arch](https://wiki.archlinux.org/t
 
 ## OS
 On change le clavier  
-`loadkeys fr`
+`loadkeys fr-latin1`
 
 Si le dossier existe on est en mode UEFI  
 `ls /sys/firmware/efi/efivars`
