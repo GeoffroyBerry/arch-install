@@ -7,6 +7,9 @@ echo "Changing locale to $loca"
 sed -iE "s/^#$loca\.UTF-8/$loca\.UTF-8/" /etc/locale.gen
 sed -iE "s/^#$loca/$loca/" /etc/locale.gen
 
+echo "generating locales ($loca)"
+locale-gen
+
 echo LANG="$loca.UTF-8" > /etc/locale.conf
 
 echo "Changing keymap to fr (azerty)"
