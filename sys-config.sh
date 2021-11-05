@@ -31,12 +31,12 @@ grub-mkconfig -o /boot/grub/grub.cfg
 echo "CHANGING PASSWORD (probly root pasword):"
 passwd
 
-echo "What username do you want (will be added to wheel group)?"
-read superuser
-echo "Creating user $superuser with groups $superuser and wheel"
-useradd -mU $superuser
-usermod -G wheel $superuser 
-echo "CHANGING $superuser PASSWORD"
-passwd $superuser
-echo "now manually edit sudoers : visudo /etc/sudoers"
-echo "done? You good to go!"
+#echo "What username do you want (will be added to wheel group)?"
+#read superuser
+#echo "Creating user $superuser with groups $superuser and wheel"
+#useradd -mU $superuser
+#usermod -G wheel $superuser 
+#echo "CHANGING $superuser PASSWORD"
+#passwd $superuser
+#echo "now manually edit sudoers : visudo /etc/sudoers"
+#echo "done? You good to go!"
