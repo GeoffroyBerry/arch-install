@@ -23,20 +23,13 @@ echo "Changed hostname to $HOSTNAME"
 echo "Enabling NetworkManager service"
 systemctl enable NetworkManager
 
+echo "grub install DISK ? (no number)"
+read grubdisk
 echo "Grub install..."
-grub-install
+grub-install "$grubdisk"
 echo "Making grub config..."
 grub-mkconfig -o /boot/grub/grub.cfg
 
-echo "CHANGING PASSWORD (probly root pasword):"
+echo "CHANGING PASSWORD:"
 passwd
 
-#echo "What username do you want (will be added to wheel group)?"
-#read superuser
-#echo "Creating user $superuser with groups $superuser and wheel"
-#useradd -mU $superuser
-#usermod -G wheel $superuser 
-#echo "CHANGING $superuser PASSWORD"
-#passwd $superuser
-#echo "now manually edit sudoers : visudo /etc/sudoers"
-#echo "done? You good to go!"

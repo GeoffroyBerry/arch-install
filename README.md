@@ -9,7 +9,7 @@ Pour plus de détails suivez plutôt le [Wiki Arch](https://wiki.archlinux.org/t
 On change le clavier  
 `loadkeys fr-latin1`
 
-Si le dossier existe on est en mode UEFI  
+Si le dossier existe on est en mode UEFI (adapter l'installation si c'est le cas) 
 `ls /sys/firmware/efi/efivars`
 
 Un coup de ping pour savoir si on est connecté  
@@ -51,14 +51,24 @@ Vérifier le contenu du fichier et éditer si besoin
 Connection au système  
 `arch-chroot /mnt`
 
-## Configuration
+## Configuration (time, lang, clavier, NetworkManager et Grub)
 git clone ce repo puis lancer le script de config (lire et adapter avant...)  
 `./sys-config.sh`
 
-go back to iso
+on retourne à l'iso
 `exit`
 
 umount to be safe
 `umount -R /mnt`
 
 `reboot`
+
+## Création de l'utilisateur principale
+Via le script  
+`./user-config.sh`
+
+Ne pas oublier d'éditer le fichier /etc/sudoers (visudo pour être safe)  
+Et ce log avec le user
+
+## Installation de l'environnement et dotfiles
+Work in progress...
