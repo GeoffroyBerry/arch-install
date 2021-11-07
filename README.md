@@ -72,3 +72,6 @@ Et ce log avec le user
 
 ## Installation de l'environnement et dotfiles
 Work in progress...
+
+Via le script  
+`./install-env.sh`
