@@ -3,7 +3,7 @@ Le but de ce document est avant tout de pouvoir installer mon environnement le p
 Ce n'est donc pas un tuto et les explications sont avant tout destinés à moi même. Cela dit, tout le monde est libre de reproduire ou s'inspirer.  
 Pour plus de détails suivez plutôt le [Wiki Arch](https://wiki.archlinux.org/title/Installation_guide_(Fran%C3%A7ais)) 
 
-**To non-french speaking folks :** The reason why this document is in french is because a few steps are french/azerty keyboard specific and you guys probably already have enough guides anyway (even though it isn't exactly a guide)  
+**To non-french speaking folks :** The reason why this document is in french is because a few steps are french/azerty keyboard specific and is targeted to a french audience (mainly myself)  
 
 ## OS
 On change le clavier  
@@ -71,7 +71,5 @@ Ne pas oublier d'éditer le fichier /etc/sudoers (visudo pour être safe)
 Et ce log avec le user
 
 ## Installation de l'environnement et dotfiles
-Work in progress...
-
 Via le script  
 `./install-env.sh`

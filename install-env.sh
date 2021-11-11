@@ -4,7 +4,9 @@ sudo pacman -S neofetch man vi neovim \
     wget curl openssh rust nodejs npm \
     xorg xorg-server xorg-xinit xorg-xrandr \
     libxinerama feh picom dmenu rofi \
-    alacritty zsh python-pip xclip
+    alacritty zsh python-pip xclip \
+    tmux zip unzip scrot
+
 
 pip install --user --upgrade pynvim
 npm install -g neovim
@@ -16,7 +18,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-paru -S polybar leftwm nerf-fonts-anonymous-pro
+paru -S polybar leftwm nerd-fonts-anonymous-pro
 
 echo "setting x11 keymap to azerty"
 localectl --no-convert set-x11-keymap fr azerty
